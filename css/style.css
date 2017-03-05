@@ -22,7 +22,10 @@ a {
   -webkit-justify-content: center;
   justify-content: center;
 }
-.me p,
+.me img {
+  width: 45%;
+  height: 45%;
+}
 .me h1 {
   text-transform: uppercase;
   letter-spacing: 3px;
