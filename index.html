@@ -4,7 +4,7 @@
 
 //-->
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
@@ -13,29 +13,26 @@
     <meta name="theme-color" content="#000000">
     <meta name="description" content="Aqui você pode saber mais sobre mim e sobre o que faço, dar uma olhada no meu portfolio ou entrar em contato para novos jobs.">
     <meta name="author" content="Marcelo Fabiano">
-    <meta property="og:title" content="Marcelo Fabiano"/>
-    <meta property="og:image" content="http://marcelofabiano.co/img/me.png"/>
-    <meta property="og:url" content="marcelofabiano.com.br"/>
-    <meta property="og:description" content="Aqui você pode saber mais sobre mim e sobre o que faço, dar uma olhada no meu portfolio ou entrar em contato para novos jobs."/>
 
     <title>Marcelo Fabiano</title>
 
-    <link href="icon.ico" rel="icon" type="image/x-icon" />
+    <link href="icon.ico" rel="icon">
 
     <link href="css/style.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'> 
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel="stylesheet"> 
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <script>
-    function bloquear(e){
+    function bloquear(){
         return false
     }
     function desbloquear(){
         return true
     }
-    document.onselectstart=new Function ("return false")
-    if (window.sidebar){document.onmousedown=bloquear
-    document.onclick=desbloquear
+    document.onselectstart = new Function ("return false")
+    if (window.sidebar){
+        document.onmousedown = bloquear
+        document.onclick = desbloquear
     }
     </script>
 </head>
