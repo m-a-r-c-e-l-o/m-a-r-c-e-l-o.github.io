@@ -1,0 +1,420 @@
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <link rel="shortcut icon" href="png/cyrus_app.png" type="image/x-icon">
+      <link rel="apple-touch-icon" href="png/cyrus_app.png" />
+      <link rel="apple-touch-icon" sizes="72x72" href="png/cyrus_app.png" />
+      <link rel="apple-touch-icon" sizes="114x114" href="png/cyrus_app.png" />
+      <link rel="apple-touch-startup-image" href="png/launch.png" />
+      <title>Cyrus</title>
+      <!-- Path to Framework7 Library CSS-->
+      <link rel="stylesheet" href="css/framework7.ios.min.css">
+      <!-- It should be included After main Framework7 styles -->
+      <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+      <!-- Path to your custom app styles-->
+      <link rel="stylesheet" href="css/my-app.css">
+      <!-- Path to custom icons-->
+      <link rel="stylesheet" href="css/framework7-icons.css">
+      <!-- Path to 3D Panels-->
+      <link rel="stylesheet" href="css/framework7.3dpanels.css">
+      <!-- Path to animate.css-->
+      <link rel="stylesheet" href="css/animate.min.css">
+      <link rel="stylesheet" href="css/animate.css">
+      <!-- Path to Upscroller-->
+      <link rel="stylesheet" href="css/upscroller.min.css">
+      <link rel="stylesheet" href="css/upscroller.css">
+      
+      <style>
+         body {
+         background-color: #232426;
+         }
+      </style>
+      <style type="text/css">
+         .mobileShow {
+         display: none;
+         }
+         /* Smartphone Portrait and Landscape */
+         @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+         .mobileShow {
+         display: inline;
+         }
+         }
+         .mobileHide {
+         display: inline;
+         }
+         /* Smartphone Portrait and Landscape */
+         @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+         .mobileHide {
+         display: none;
+         }
+         }
+      </style>
+      <!-- Path to Custom CSS-->
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body class="layout-dark">
+      <div class="mobileHide">
+         <center>
+            <h1 style="color:#ffffff;">403 Forbidden</h1>
+         </center>
+         <center>
+            <h2 style="color:#ffffff;">Access Denied</h2>
+         </center>
+         <center><img src="png/cyrus_app.png" class="animated infinite jello" alt="Cyrus App Icon" style="width:12;height:12;"></center>
+         <center>
+            <p style="color:#ffffff;">Please access Cyrus through the App, or install it <a href="https://cyrusinstaller.com" class="external item-link item-content redirect">here</a>.</p>
+         </center>
+      </div>
+      <div class="mobileShow">
+         <!-- Status bar overlay for fullscreen mode-->
+         <div class="statusbar-overlay"></div>
+         <!-- Panels overlay-->
+         <div class="panel-overlay"></div>
+         <!-- Left panel with reveal effect-->
+         <div class="panel panel-left panel-cover">
+            <div class="content-block">
+               <h1>Updates</h1>
+               <strong>
+                  <p>Here are the updates. This shows you the newest apps, changes, and more.</p>
+               </strong>
+               <br>
+               <center>
+                  <p>Only bug is random black screen on boot. Otherwise, Cyrus is almost ready for Xcode and Apple Configurator!</p>
+               </center>
+            </div>
+         </div>
+         <!-- Right panel with cover effect-->
+         <div class="panel panel-right panel-cover">
+            <div class="content-block">
+               <h1>Contact</h1>
+               <strong>
+                  <p>If you have any app suggestions, comments, or questions about Cyrus, you can contact us here:</p>
+               </strong>
+               <div class="content-block-title">Contact:</div>
+               <div class="list-block inset">
+                  <ul>
+                     <li>
+                        <a href="mailto:cyrusinstaller@gmail.com?Subject=Contact%20Cyrus" class="external item-link item-content redirect">Email</a>
+                     </li>
+                     <li>
+                        <a href="twitter:///user?screen_name=cyrusinstaller" class="external item-link item-content redirect">Twitter</a>
+                     </li>
+                     <li>
+                        <a href="fb://profile/132753734806" class="external item-link item-content redirect">Facebook</a>
+                        <!-- Go here to find about page: https://stackoverflow.com/questions/12107627/open-facebook-page-in-native-facebook-ios-app-via-simple-url-sheme-issue -->
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <!-- Views, and they are tabs-->
+         <!-- We need to set "toolbar-through" class on it to keep space for our tab bar-->
+         <div class="views tabs toolbar-through">
+            <!-- Your first view, it is also a .tab and should have "active" class to make it visible by default-->
+            <div id="view-1" class="view view-main tab active">
+               <div class="navbar">
+                  <div class="navbar-inner">
+                     <div class="center sliding">Home</div>
+                     <div class="right">
+                        <a class="f7-icons" href="javascript:window.location.reload(true)">reload</a>
+                     </div>
+                  </div>
+               </div>
+               <!-- Pages-->
+               <div class="pages navbar-through">
+                  <!-- Page, data-page contains page name-->
+                  <div data-page="index-1" class="page">
+                     <!-- Scrollable page content-->
+                     <div class="page-content">
+                        <br>
+                        <center>
+                           <center><img src="png/cyrus_logo_text.png" class="animated bounce" alt="Cyrus Text Logo" style="width:146;height:36;"></center>
+                           <!-- <div class="content-block-title">Cyrus BETA</div> -->
+                        </center>
+                        <br>
+                        <center><img src="png/cyrus_app.png" class="animated bounceIn" alt="Cyrus App Icon" style="width:12;height:12;"></center>
+                        <div class="content-block">
+                           <center>
+                           <h3> A iOS Installer full of Amazing Apps.</h3>
+                           <center>
+                              <h3>Developed by The Cyrus Team</h3>
+                           </center>
+                           <div class="list-block inset">
+                              <ul>
+                                 <li>
+                                    <a href="home/goal.html" class="item-link item-content">
+                                       <div class="item-media"><img src="home/goal.png" class="animated bounceIn" width="70" height="70"></div>
+                                       <div class="item-inner">
+                                          <div class="item-title-row">
+                                             <div class="item-title">Cyrus's Goal</div>
+                                          </div>
+                                       </div>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="home/updates.html" class="item-link item-content">
+                                       <div class="item-media"><img src="home/updates.png" class="animated bounceIn" width="70" height="70"></div>
+                                       <div class="item-inner">
+                                          <div class="item-title-row">
+                                             <div class="item-title">Cyrus Updates</div>
+                                          </div>
+                                       </div>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="home/FAQ.html" class="item-link item-content">
+                                       <div class="item-media"><img src="home/faq.png" class="animated bounceIn" width="70" height="70"></div>
+                                       <div class="item-inner">
+                                          <div class="item-title-row">
+                                             <div class="item-title">FAQ</div>
+                                          </div>
+                                       </div>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <!-- <p><a href="#" class="button notification-default">Test Welcome notification</a></p> -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Second view (for second wrap)-->
+            <div id="view-2" class="view tab">
+               <!-- We can make with view with navigation, let's add Top Navbar-->
+               <div class="navbar">
+                  <div class="navbar-inner">
+                     <div class="center sliding">Apps</div>
+                     <div class="right">
+                        <a class="f7-icons" href="javascript:window.location.reload(true)">reload</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="pages navbar-through">
+                  <div data-page="index-2" class="page">
+                     <div class="page-content">
+                        <div class="content-block">
+                           <div class="content-block-title">App Status</div>
+                           <div class="list-block inset">
+                              <ul>
+                                 <li class="item-content">
+                                    <div class="item-media"><i class="f7-icons color-green">check_round_fill</i></div>
+                                    <div class="item-inner">
+                                       <div class="item-title">Working</div>
+                                    </div>
+                                 </li>
+                                 <li class="item-content">
+                                    <div class="item-media"><i class="f7-icons color-red">close_round_fill</i></div>
+                                    <div class="item-inner">
+                                       <div class="item-title">Not Working</div>
+                                    </div>
+                                 </li>
+                                 <li>
+                                    <a href="apps/loophole.html" class="item-link item-content">
+                                       <div class="item-media"><i class="f7-icons color-orange">today_fill</i></div>
+                                       <div class="item-inner">
+                                          <div class="item-title">Needs Loophole</div>
+                                       </div>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="apps/airplane.html" class="item-link item-content">
+                                       <div class="item-media"><i class="f7-icons color-blue">paper_plane_fill</i></div>
+                                       <div class="item-inner">
+                                          <div class="item-title">Needs Airplane</div>
+                                       </div>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="content-block-title">App Signer</div>
+                        <div class="list-block inset">
+                           <ul>
+                              <li>
+                                 <a href="http://www.tutuapp.vip/index.php?r=web/installZB&lang=en" class="external item-link item-content redirect">
+                                    <div class="item-media"><img src="apps/tutuapp.png" alt="TutuHelper" width="40" height="40"></div>
+                                    <div class="item-inner">
+                                       <div class="item-title">TutuApp</div>
+                                       &nbsp;
+                                       <div class="chip">
+                                          <div class="chip-label">45.5 MB</div>
+                                       </div>
+                                       <div class="item-after"><i class="f7-icons color-green">check_round_fill</i></div>
+                                    </div>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="list-block inset">
+  <ul>
+    <li>
+      <a href="home/install.html" class="item-link item-content">
+        <div class="item-inner">
+          <div class="item-title">Untrusted Developer Fix</div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+                        <div class="content-block-title">App Categories</div>
+                        <div class="list-block inset">
+                           <ul>
+                              <li>
+                                 <a href="apps/emulators.html" class="item-link item-content">
+                                    <div class="item-media"><img src="apps/emulators.png" class="animated bounceIn" width="70" height="70"></div>
+                                    <div class="item-inner">
+                                       <div class="item-title-row">
+                                          <div class="item-title">Emulators</div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="apps/entertainment.html" class="item-link item-content">
+                                    <div class="item-media"><img src="apps/entertainment.png" class="animated bounceIn" width="70" height="70"></div>
+                                    <div class="item-inner">
+                                       <div class="item-title-row">
+                                          <div class="item-title">Entertainment</div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="apps/social.html" class="item-link item-content">
+                                    <div class="item-media"><img src="apps/social.png" class="animated bounceIn" width="70" height="70"></div>
+                                    <div class="item-inner">
+                                       <div class="item-title-row">
+                                          <div class="item-title">Social Media</div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="apps/tweaked.html" class="item-link item-content">
+                                    <div class="item-media"><img src="apps/tweaked.png" class="animated bounceIn" width="70" height="70"></div>
+                                    <div class="item-inner">
+                                       <div class="item-title-row">
+                                          <div class="item-title">Tweaked Apps</div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="apps/other.html" class="item-link item-content">
+                                    <div class="item-media"><img src="apps/other.png" class="animated bounceIn" width="70" height="70"></div>
+                                    <div class="item-inner">
+                                       <div class="item-title-row">
+                                          <div class="item-title">Other Apps</div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="content-block-title">Themes and Tweaks</div>
+                        <div class="list-block inset">
+                           <ul>
+                              <li>
+                                 <a href="#" class="item-link item-content">
+                                    <div class="item-media"><img src="themes/themes.png" class="animated bounceIn" width="70" height="70"></div>
+                                    <div class="item-inner">
+                                       <div class="item-title-row">
+                                          <div class="item-title">Themes & Tweaks</div>
+                                          <div class="item-inner">(Coming Soon)</div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Third view (for third wrap)-->
+            <div id="view-3" class="view tab">
+               <!-- We can make with view with navigation, let's add Top Navbar-->
+               <div class="navbar">
+                  <div class="navbar-inner">
+                     <div class="center sliding">Info</div>
+                     <div class="right">
+                        <a class="f7-icons" href="javascript:window.location.reload(true)">reload</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="pages navbar-through">
+                  <div data-page="index-3" class="page">
+                     <div class="page-content">
+                        <div class="content-block">
+                           <p>Welcome to the Info page! Here you can find out about the creator of Cyrus, app developers, and more!</p>
+                        </div>
+                        <div class="list-block inset">
+                           <ul>
+                              <li>
+                                 <a href="info/dev.html" class="item-link item-content">
+                                    <div class="item-media"><img src="info/dev.png" class="animated bounceIn" width="70" height="70"></div>
+                                    <div class="item-inner">
+                                       <div class="item-title-row">
+                                          <div class="item-title">Cyrus Developers</div>
+                                       </div>
+                                    </div>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="content-block">
+                          <div class="content-block-title">Settings</div>
+                          <div class="list-block inset">
+                            <ul>
+                              <li class="item-content">
+                                <div class="item-media">
+                                  <label class="label-switch" type="checkbox" id="lightModeCheckboxClicker">
+                                  <input type="checkbox" id="lightModeCheckbox">
+                                  <div class="checkbox"></div>
+                                  </label>
+                                </div>
+                                <div class="item-inner">Light Mode (Testing)</div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                       
+                        <center>
+                           <a href="http://www.dmca.com/Protection/Status.aspx?ID=12310c4f-01cf-498f-b523-18e682e1c6b6" title="DMCA.com Protection Status" class="dmca-badge external item-link item-content redirect"> <img src="//images.dmca.com/Badges/dmca_protected_sml_120d.png?ID=12310c4f-01cf-498f-b523-18e682e1c6b6" alt="DMCA.com Protection Status"></a> <script src="//images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+                        </center>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Bottom Tabbar-->
+            <div class="toolbar tabbar tabbar-labels">
+               <div class="toolbar-inner"><a href="#view-1" class="tab-link active"><i class="f7-icons">home</i><span class="tabbar-label">Home</span></a>
+                  <a href="#view-2" class="tab-link"><i class="f7-icons">download</i><span class="tabbar-label">Apps</span></a>
+                  <a href="#view-3" class="tab-link"><i class="f7-icons">info</i><span class="tabbar-label">Info</span></a>
+               </div>
+            </div>
+         </div>
+         <!-- Path to Framework7 Library JS-->
+         <script type="text/javascript" src="js/framework7.min.js"></script>
+         <!-- Path to your app js-->
+         <script type="text/javascript" src="js/my-app.js"></script>
+         <!-- Path to 3D Panels-->
+         <script src="js/framework7.3dpanels.js"></script>
+         <!-- Path to Upscroller-->
+         <script type="text/javascript" src="css/upscroller.min.js"></script>
+         <script type="text/javascript" src="css/upscroller.js"></script>
+         <!-- Path to Tour Guide-->
+         <script src="js/tourguide.js"></script>
+         <!-- Path to JQuery-->
+         <script src="assets/js/jquery.min.js"></script>
+         <!-- Path to Custom JS-->
+         <script src="js/customScript.js"></script>
+      </div>
+   </body>
+</html>
