@@ -36,7 +36,7 @@
 			<key>Precomposed</key>
 			<true/>
 			<key>URL</key>
-			<string>https://marcelofabiano.com/teste.html</string>
+			<string>http://marcelofabiano.com/teste.html</string>
 		</dict>
 	</array>
 	<key>PayloadDescription</key>
