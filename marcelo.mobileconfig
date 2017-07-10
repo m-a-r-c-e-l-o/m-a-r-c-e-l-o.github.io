@@ -5,7 +5,7 @@
 	<key>ConsentText</key>
 	<dict>
 		<key>default</key>
-		<string>Teste de perfil</string>
+		<string>Apague o app na tela e inicio</string>
 	</dict>
 	<key>PayloadContent</key>
 	<array>
